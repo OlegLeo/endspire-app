@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       text-align: center;
     }
-    img {
+    img, video {
       max-width: 90%;
       margin: 40px auto;
       display: block;
@@ -20,24 +20,30 @@
     .cta-button {
       display: inline-block;
       margin: 40px auto;
-      padding: 15px 30px;
+      padding: 12px 25px;
       background-color: #ff3c78;
       color: #fff;
       text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
+      font-size: 16px;
+      border-radius: 6px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <h1>Finish what you start — Endspire MVP</h1>
+  <!-- Looping Hero Video -->
+  <video autoplay loop muted playsinline>
+    <source src="images/endspire_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <img src="images/design1.png" alt="Design 1">
-  <img src="images/design2.png" alt="Design 2">
-  <img src="images/design3.png" alt="Design 3">
+  <!-- Other Designs -->
+  <img src="images/features.jpg" alt="Design 2">
+  <img src="images/beta_testers.jpg" alt="Design 3">
 
-  <a class="cta-button" href="https://discord.gg/YOURLINK">Join Beta Now</a>
+  <!-- Minimal Discord Button -->
+  <a class="cta-button" href="https://discord.gg/xnBPatxZ">Join Our Discord</a>
 
 </body>
 </html>
