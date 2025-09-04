@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Endspire Beta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #000000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      cursor: url('attachments/circle.png'), auto;    
+    }
+
+    /* Top header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 1000;
+      background-color: transparent;
+    }
+
+    .app-name {
+      font-weight: 700;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .beta-badge {
+      font-weight: 700;
+      font-size: 12px;
+      color: #000;
+      background-color: #fff;
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: auto;
+      height: 110px;
+      margin-bottom: 0px;
+    }
+
+    .label {
+      display: inline-flex;
+      align-items: center;
+      background-color: #000000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #cfcfcf;
+      margin-top: 5%;
+      margin-bottom: 60px;
+      border: 0.5px solid #7e7e7e;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #a1a1a1;
+      border-radius: 50%;
+      margin-right: 8px;
+      animation: blink 6s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 5px #DFFF00, 0 0 10px #DFFF00;
+      }
+      25%, 75% {
+        opacity: 0.2;
+        box-shadow: 0 0 2px #DFFF00, 0 0 4px #DFFF00;
+      }
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #AAAAAA;
+      max-width: 500px;
+      margin-bottom: 60px;
+    }
+
+    .discord-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      color: #000000;
+      font-weight: 700;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-size: 15px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      margin-bottom: 40px;
+    }
+
+    .discord-icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+    }
+
+    video {
+      max-width: 20%;
+      border-radius: 12px;
+      margin-top: 1%;
+      margin-bottom: 50px;
+    }
+    
+    /* About Section */
+    .about-section {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      padding: 80px 5%;
+      margin: 100px auto;
+      max-width: 1200px;
+    }
+
+    .about-image {
+      flex: 1;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+    .about-content {
+      flex: 1.2;
+      text-align: left;
+    }
+    
+    .about-box {
+      background-color: #101010;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 40px;
+    }
+
+    .about-box p {
+      font-size: 18px;
+      color: #b0b0b0;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* Bottom image section for features */
+    .bottom-section {
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bottom-section img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 100px;
+    }
+
+  </style>
+</head>
+<body>
+
+   <!-- Top header -->
+  <div class="header">
+    <div class="app-name">Endspire</div>
+    <div class="beta-badge">BETA</div>
+  </div>
+
+  <section class="hero">
+    <img src="attachments/endspire_logo.png" alt="Endspire Logo" class="logo">
+    <div class="label"><span class="dot"></span>LIMITED BETA SPOTS AVAILABLE</div>
+    <h1>Get early access</h1>
+    <p>Be among the first to try Endspire. Join our Discord to claim beta access.</p>    
+
+    <a href="YOUR_DISCORD_INVITE_LINK" class="discord-button" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord" class="discord-icon">
+      Claim Beta Access
+    </a>
+
+    <video src="attachments/launching_soon.mp4" autoplay loop muted playsinline></video>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="attachments/beta_testers.png" alt="Beta Testers Community">
+    </div>
+    <div class="about-content">
+      <div class="about-box">
+        <p>
+          Endspire - app designed for people who start but never finish.<br>
+          No ads. No distractions. No logins. Just simple and objective progress toward your goals!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom images -->
+  <div class="bottom-section">
+    <img src="attachments/features.jpg" alt="Features">
+  </div>
+
+  <!-- Footer -->
+  <footer style="margin: 60px 0 20px 0; color: #888888; font-size: 14px; text-align: center;">
+    © 2025 Endspire • Limited Beta
+  </footer>
+
+</body>
+</html>
